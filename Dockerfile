@@ -2,6 +2,8 @@ FROM php:7.1-apache
 
 LABEL maintainer="S-Kazuki<contact@revoneo.com>"
 
+ENV APACHE_DOCUMENT_ROOT /var/www/html/html
+
 RUN apt-get update \
   && apt-get install --no-install-recommends -y \
   git curl wget sudo libfreetype6-dev libjpeg62-turbo-dev libmcrypt-dev libmcrypt-dev libxml2-dev libpq-dev libpq5 mysql-client ssl-cert libicu-dev unzip \
