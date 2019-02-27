@@ -34,5 +34,9 @@ RUN apt-get update \
 USER www-data
 RUN composer global require --optimize-autoloader \
   "hirak/prestissimo"
-
 USER root
+
+COPY entrypoint.sh /entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]
+CMD ["apache2-foreground"]
