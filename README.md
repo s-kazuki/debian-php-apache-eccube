@@ -1,2 +1,2 @@
-# debian-php-apache0eccube
+# debian-php-apache-eccube
 Lightweight ec-cube docker image on debian
